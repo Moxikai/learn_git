@@ -60,6 +60,8 @@ _我们创建版本库时，Git自动创建了master分支_
 		git checkout -b <name> #创建并切换分支
 		git merge <name> #合并某分支到当前分支
 		git branch -d <name> #删除分支
+#17.2 解决冲突
+		(1)两个分支在相同地方有不同的修改，这是feature1
 	
 
 
