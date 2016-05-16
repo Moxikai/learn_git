@@ -33,5 +33,9 @@ _我们创建版本库时，Git自动创建了master分支_
 	ssh-keygen -t rsa -C "zhu-hero@qq.com"
 	(2)第二步，登录GitHub,打开Account settings,ssh keys页面，点击 add ssh key 填上任意title,在key文本框中粘贴id_rsa.pub文件的内容
 	—-注意：GitHub通过SSH Key 识别推送人身份，也就是意味着，在多台电脑上分别提交内容时，需要对应生成SSH Key,并且添加到GitHub
-	
+#15、远程仓库同步
+	(1)、如果是第一次操作，需要在GitHub创建一个repository
+	(2)、根据提示，使用命令 git remote add origin https://github.com/Moxikai/learn_git.git，添加完成后，远程库的名字就是origin
+	(3)、推送本地库内容到远程库，使用git push命令：第一次推送，使用 git push -u origin master,-u参数实现本地master分支内容推送到远程新的master分支，还会把本地的master分支和远程的master分支关联起来
+	(4)、
 
