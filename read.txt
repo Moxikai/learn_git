@@ -1,15 +1,19 @@
 # 这是一个文本文件，测试git
-#刚刚完成了一个新的命令学习：
-#1、git init
-#2、git add <file>
-#3、git commit -m 'xxx'
-#4、查看git 状态
+# 刚刚完成了一个新的命令学习：
+# 1、git init
+# 2、git add <file>
+# 3、git commit -m 'xxx'
+# 4、查看git 状态
 	git status #告诉你现在git的状态，是否有修改，是否有提交修改
-#5、查看最近修改
+# 5、查看最近修改
 	git diff #没有提交的修改会以绿色标注出来
-#准备学习版本回退
-#6、使用git log查看提交版本
-#7、使用 git reset --hard HEAD^ 回退到上一个版本，其中^代表上一个，^^代表上上一个，依次类推
-#8、使用git reset --hard <commit id>可以转到任意版本，包括回到过去，现在。
-#9、通过 git reflog 查看历史命令，找到commit id
+# 准备学习版本回退
+# 6、使用git log查看提交版本
+# 7、使用 git reset --hard HEAD^ 回退到上一个版本，其中^代表上一个，^^代表上上一个，依次类推
+	git reset --hard HEAD^
+# 8、使用git reset --hard <commit id>可以转到任意版本，包括回到过去，现在。
+	git reset --hard 246b7d3
+# 9、通过 git reflog 查看历史命令，找到commit id
+	git reflog
+
 
