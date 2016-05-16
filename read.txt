@@ -28,4 +28,10 @@ _我们创建版本库时，Git自动创建了master分支_
 	(1)Mac 命令： rm <filename>删除文件
 	(2)这时有两种情况，第一种刚才属于错误操作，你需要恢复文件，使用命令 git checkout -- <filename> 撤销删除；第二种，从版本库删除文件，使用命令 git rm <filename>,git commit -m 'xxx'连续连个命令
 	--注意了：git checkout --<filename> 命令其实是用版本库的文件替换工作区的文件
+#14、远程仓库操作
+	(1)第一步 创建SSH Key,一路默认下来，在用户主目录找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，即密钥对，其中id_rsa.pub是公钥，可以放心告诉别人。
+	ssh-keygen -t rsa -C "zhu-hero@qq.com"
+	(2)第二步，登录GitHub,打开Account settings,ssh keys页面，点击 add ssh key 填上任意title,在key文本框中粘贴id_rsa.pub文件的内容
+	—-注意：GitHub通过SSH Key 识别推送人身份，也就是意味着，在多台电脑上分别提交内容时，需要对应生成SSH Key,并且添加到GitHub
+	
 
