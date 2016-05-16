@@ -73,3 +73,6 @@ _我们创建版本库时，Git自动创建了master分支_
 		(1)开发分支dev上的工作没有提交时，需要基于master分支创建新的分支，使用命令 git stash 把当前分支dev的现场保护起来
 		(2)这是在dev分支上的修改
 		(3)继续在dev修改，本次未保存
+		(4)使用命令 git stash list 查看现场，
+		(5)使用git stash apply恢复，恢复后stash内容不会删除，需要使用命令 git stash drop来删除
+		(6)另一种方式 git stash pop,恢复的同时把stash内容删除
