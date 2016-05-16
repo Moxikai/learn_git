@@ -53,7 +53,13 @@ _我们创建版本库时，Git自动创建了master分支_
 	(4)切换分支，使用命令 git checkout master
 	(5)合并分支使用命令git merge dev，其中dev是分支名称
 	(6)合并完成后，使用命令 git branch -d dev 删除分支
-	
+	(7)总结：
+		git branch #查看分支
+		git branch <name> #创建分支
+		git checkout <name> #切换分支
+		git checkout -b <name> #创建并切换分支
+		git merge <name> #合并某分支到当前分支
+		git branch -d <name> #删除分支
 	
 
 
