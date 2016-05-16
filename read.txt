@@ -69,3 +69,4 @@ _我们创建版本库时，Git自动创建了master分支_
 		(1)命令 git merge 默认使用 Fast forward模式，这种模式下，删除分支后，会丢掉分支信息
 		(2)尝试新的模式，增加参数 --no-ff，完整命令 git merge --no-ff -m 'xxxxx' <branchname>,这种模式下会生成一个新的commit，因此有 -m 参数及注释
 		
+#修复bug001
