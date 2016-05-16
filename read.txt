@@ -13,7 +13,10 @@
 	git reset --hard HEAD^
 # 8、使用git reset --hard <commit id>可以转到任意版本，包括回到过去，现在。
 	git reset --hard 246b7d3
-# 9、通过 git reflog 查看历史命令，找到commit id
+# 9、时光穿梭前，通过 git reflog 查看历史命令，找到commit id
 	git reflog
+
+# 10、git add \<filename\>把文件添加进去，实际上就是把文件修改添加到暂存区；git commit -m ‘xxx’提交修改，把暂存区的所有内容提交到当前分支
+_我们创建版本库时，Git自动创建了master分支_
 
 
