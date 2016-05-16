@@ -42,6 +42,13 @@ _我们创建版本库时，Git自动创建了master分支_
 	(1)使用命令git clone git@github.com:Moxikai/test_clone1.git 或者 https://github.com/Moxikai/test_clone1.git
 	其中 git@github.com:Moxikai/test_clone1.git和https://github.com/Moxikai/test_clone1.git为远程仓库地址
 	使用SSH速度更快，推荐这种方式
-	
+#17、分支管理
+#17.1、创建分支
+	(1)使用命令 git checkout -b dev
+	-b参数表示创建并切换，相当于 git branch dev,git checkout dev这两条命令
+	(2)列出所有分支
+	使用命令 git branch
+	*表示当前当前分支
+
 
 
