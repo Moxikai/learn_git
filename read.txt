@@ -68,4 +68,6 @@ _我们创建版本库时，Git自动创建了master分支_
 #17.3 分支管理策略
 		(1)命令 git merge 默认使用 Fast forward模式，这种模式下，删除分支后，会丢掉分支信息
 		(2)尝试新的模式，增加参数 --no-ff，完整命令 git merge --no-ff -m 'xxxxx' <branchname>,这种模式下会生成一个新的commit，因此有 -m 参数及注释
-		
+#17.4 临时修复bug，保护现场
+		(1)开发分支dev上的工作没有提交时，需要基于master分支创建新的分支，使用命令 git stash 把当前分支dev的现场保护起来
+		(2)这是在dev分支上的修改
