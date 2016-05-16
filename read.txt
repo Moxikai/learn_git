@@ -114,5 +114,10 @@ _我们创建版本库时，Git自动创建了master分支_
 		推送单个标签，命令 git push origin v1.0
 		一次性推送全部尚未送到远程的本地标签：
 		git push origin --tags
-		
-
+		(8)删除远程标签
+		首先删除本地标签
+		git tag -d <tagname>
+		再删除远程标签
+		git push origin :refs/tags/<tagname>
+#疑点
+ git checkout <tagname> #转到相应tag节点
