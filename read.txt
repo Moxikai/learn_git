@@ -20,8 +20,8 @@
 _我们创建版本库时，Git自动创建了master分支_
 
 # 11、Git 跟踪的是文件的修改，而非文件
-#12、git checkout -- <filename> 撤销修改
--文件自修改后还没有被放到暂存区，即没有使用git add <filename>添加修改；撤销修改就回到和版本库一模一样
--文件已经添加到暂存区后，又做了修改，撤销修改就回到添加到暂存区后的状态
-
+#12、(1)改乱了工作区某个文件内容（修改文件了，没有提交到暂存区),使用命令 git checkout --<filename>
+	 (2)已经提交到暂存区，想放弃修改，分两步走：第一步使用命令 git reset HEAD <filename>;第二步使用命令 git checkout --<filename>
+	 (3)已经提交到版本库时，要撤销修改，使用版本回退，分两步走：第一步使用命令git reflog，查看 commit id;第二步使用命令 git reset --hard <commit id>
+	 
 
