@@ -91,3 +91,28 @@ _我们创建版本库时，Git自动创建了master分支_
 		命令 git clone git@github.com:Moxikai/learn_git.git
 		命令 git branch,查看分支，可以发现只有master分支，没有开发分支
 		继续使用命令 git checkout -b dev origin/dev，可以发现dev分支已经克隆下来了
+		(4)多人推送更新时遇到冲突的处理
+		命令 git pull origin dev
+		手动解决冲突后，再提交：git add <filename>,git commit -m 'xxxx'
+#19 标签管理
+		(1)打标签
+		切换需要打标签的分支，命令 git branch
+		打标签,命令 git tag <tagname>，比如 git tag v1.0
+		(2)历史标签，使用场景：给历史版本添加标签
+		找到commit id,命令 git log --pretty=oneline --abbrev-commit
+		使用命令 git tag <tagname> <commit id>
+		(3)查看所有标签
+		命令 git tag
+		(4)带说明的标签
+		git tag -a <tagname> -m 'xxxxx' <commit id>
+		(5)查看文字说明
+		git show <tagname>
+		(6) 标签打错，删除标签
+		命令 git tag -d <tagname>
+		创建的标签只储存在本地，不会自动推送到远程。因此打错的标签可以在本地安全删除
+		(7) 推送标签到远程
+		推送单个标签，命令 git push origin v1.0
+		一次性推送全部尚未送到远程的本地标签：
+		git push origin --tags
+		
+
