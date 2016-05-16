@@ -75,4 +75,4 @@ _我们创建版本库时，Git自动创建了master分支_
 		(4)使用命令 git stash list 查看现场，
 		(5)使用git stash apply恢复，恢复后stash内容不会删除，需要使用命令 git stash drop来删除
 		(6)另一种方式 git stash pop,恢复的同时把stash内容删除
-#测试
+#测试3
