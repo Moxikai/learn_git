@@ -51,6 +51,8 @@ _我们创建版本库时，Git自动创建了master分支_
 	*表示当前当前分支
 	(3)在当前分支上提交修改，使用命令 git add <filename>
 	(4)切换分支，使用命令 git checkout master
+	(5)合并分支使用命令git merge dev，其中dev是分支名称
+	
 	
 
 
