@@ -81,4 +81,11 @@ _我们创建版本库时，Git自动创建了master分支_
 #18 多人协作&远程仓库
 		(1)推送分支
 		命令 git push origin master
+		推送其他分支，使用以下命令：
+		git push origin dev
+		(2)本地分支策略
+		master分支是主分支，dev分支是开发分支，团队成员需要协作，因此需要同步
+		bug分支只用于在本地修复bug，一般不推送
+		feature分支是否推送，视协作而定
+		(3)抓取分支
 		
