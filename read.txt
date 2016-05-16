@@ -61,4 +61,4 @@ _我们创建版本库时，Git自动创建了master分支_
 		git merge <name> #合并某分支到当前分支
 		git branch -d <name> #删除分支
 #17.2 解决冲突
-		(1)这是master
+		(1)两个分支在相同地方有不同的修改，这是feature1
