@@ -1,1 +1,5 @@
 # 这是一个文本文件，测试git
+#刚刚完成了一个新的命令学习：
+#1、git init
+#2、git add <file>
+#3、git commit -m 'xxx'
